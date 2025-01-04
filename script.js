@@ -1,0 +1,286 @@
+const container = document.getElementById("container");
+
+const mangas = [
+    {
+        title: "Blue Period",
+        numbers: 14,
+        priority: "Priorité",
+    },
+    {
+        title: "Birdmen",
+        numbers: 1,
+        priority: "En pause",
+    },
+    {
+        title: "Boruto",
+        numbers: 5,
+        priority: "Arrêté",
+    },
+    {
+        title: "Blue Exorcist",
+        numbers: 24,
+        priority: "En pause",
+    },
+    {
+        title: "Black Torch",
+        numbers: 5,
+        priority: "En pause",
+    },
+    {
+        title: "Barrage",
+        numbers: 1,
+        priority: "En pause",
+    },
+    {
+        title: "Battle Game in 5 seconds",
+        numbers: 4,
+        priority: "En cours",
+    },
+    {
+        title: "Darwin's Game",
+        numbers: 29,
+        priority: "Priorité",
+    },
+    {
+        title: "Prison Lab",
+        numbers: 2,
+        priority: "En pause",
+    },
+    {
+        title: "Seraph of the End",
+        numbers: 16,
+        priority: "En pause",
+    },
+    {
+        title: "Black Clover",
+        numbers: 19,
+        priority: "En pause",
+    },
+    {
+        title: "Tales of Wedding Rings",
+        numbers: 1,
+        priority: "En pause",
+    },
+    {
+        title: "The Isolator",
+        numbers: 2,
+        priority: "En cours",
+    },
+    {
+        title: "Mushoku Tensei",
+        numbers: 10,
+        priority: "En cours",
+    },
+    {
+        title: "Strangers Case",
+        numbers: 3,
+        priority: "En pause",
+    },
+    {
+        title: "Dead Tube",
+        numbers: 22,
+        priority: "Priorité",
+    },
+    {
+        title: "My Hero Academia",
+        numbers: 34,
+        priority: "En cours",
+    },
+    {
+        title: "My Hero Academia Vigilante",
+        numbers: 6,
+        priority: "En cours",
+    },
+    {
+        title: "Jujutsu Kaisen",
+        numbers: 15,
+        priority: "En cours",
+    },
+    {
+        title: "Re:teen",
+        numbers: 3,
+        priority: "Fini",
+    },
+    {
+        title: "Sacred Beast",
+        numbers: 7,
+        priority: "En pause",
+    },
+    {
+        title: "Level Up Disaster",
+        numbers: 1,
+        priority: "Priorité",
+    },
+    {
+        title: "L'Attaque des Titans",
+        numbers: 34,
+        priority: "Fini",
+    },
+    {
+        title: "Made in Abyss",
+        numbers: 10,
+        priority: "En cours",
+    },
+    {
+        title: "Solo Leveling",
+        numbers: 14,
+        priority: "En cours",
+    },
+    {
+        title: "Blue Lock",
+        numbers: 21,
+        priority: "Priorité",
+    },
+    {
+        title: "No Game No Life",
+        numbers: 2,
+        priority: "En cours",
+    },
+    {
+        title: "All You Need Is Kill",
+        numbers: 2,
+        priority: "Fini",
+    },
+    {
+        title: "Real Account",
+        numbers: 9,
+        priority: "En cours",
+    },
+    {
+        title: "World War Demons",
+        numbers: 1,
+        priority: "En pause",
+    },
+    {
+        title: "Dernière Heure",
+        numbers: 1,
+        priority: "En pause",
+    },
+    {
+        title: "Anonyme",
+        numbers: 4,
+        priority: "En cours",
+    },
+    {
+        title: "We Never Learn",
+        numbers: 6,
+        priority: "En cours",
+    },
+    {
+        title: "Moi Quand Je Me Réincarne en Slime",
+        numbers: 19,
+        priority: "En cours",
+    },
+    {
+        title: "Dead Mount Death Play",
+        numbers: 4,
+        priority: "En cours",
+    },
+    {
+        title: "Radiant",
+        numbers: 12,
+        priority: "En pause",
+    },
+    {
+        title: "Online The Comic",
+        numbers: 6,
+        priority: "En cours",
+    },
+    {
+        title: "Kingdom Game",
+        numbers: 4,
+        priority: "En cours",
+    },
+    {
+        title: "Origin",
+        numbers: 10,
+        priority: "Fini",
+    },
+    {
+        title: "The Promised Neverland",
+        numbers: 20,
+        priority: "Fini",
+    },
+    {
+        title: "The Rising of the Shield Hero",
+        numbers: 19,
+        priority: "En cours",
+    },
+    {
+        title: "Goblin Slayer",
+        numbers: 5,
+        priority: "En cours",
+    },
+    {
+        title: "Green WorldZ",
+        numbers: 8,
+        priority: "Fini",
+    },
+    {
+        title: "Sky High Survival",
+        numbers: 11,
+        priority: "En cours",
+    },
+    {
+        title: "It's my Life",
+        numbers: 1,
+        priority: "En cours",
+    },
+    {
+        title: "Ippo",
+        numbers: 1,
+        priority: "Fini",
+    },
+    {
+        title: "Final Fantasy Le Guerrier à l'épée de glace",
+        numbers: 2,
+        priority: "Fini",
+    },
+]
+
+function searchMangas(query) {
+    const lowerCaseQuery = query.toLowerCase(); // Convertir la recherche en minuscules
+    container.innerHTML = ""; // Vider le conteneur
+
+    const filteredMangas = mangas.filter(manga =>
+        manga.title.toLowerCase().includes(lowerCaseQuery)
+    );
+
+    if (filteredMangas.length === 0) {
+        container.innerHTML = "<p>Aucun manga trouvé.</p>";
+    } else {
+        filteredMangas.forEach(manga => {
+            const mangaElement = document.createElement("div");
+            mangaElement.classList.add("manga");
+            mangaElement.innerHTML = `
+                <h2>${manga.title}</h2>
+                <p>Nombre de tomes : ${manga.numbers}</p>
+                <p>${manga.priority}</p>
+            `;
+            container.appendChild(mangaElement);
+        });
+    }
+}
+
+// Fonction pour afficher les mangas filtrés
+function filterMangas(priority) {
+    container.innerHTML = ""; // Vider le conteneur
+
+    const filteredMangas = priority === "Tous"
+        ? mangas // Si "Tous", afficher tous les mangas
+        : mangas.filter(manga => manga.priority === priority);
+
+    filteredMangas.forEach(manga => {
+        const mangaElement = document.createElement("div");
+        mangaElement.classList.add("manga");
+        mangaElement.innerHTML = `
+            <h2>${manga.title}</h2>
+            <p>Nombre de tomes : ${manga.numbers}</p>
+            <p>${manga.priority}</p>
+        `;
+        container.appendChild(mangaElement);
+    });
+}
+
+// Afficher tous les mangas au chargement initial
+filterMangas("Tous");

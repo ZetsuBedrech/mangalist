@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainbody">
+        <h1>MangaList</h1>
+        <div class="search-bar">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Rechercher un manga..."
+                oninput="searchMangas(this.value)"
+            />
+        </div>
+        <div class="filter-buttons">
+            <button onclick="filterMangas('Tous')">Tous</button>
+            <button onclick="filterMangas('Priorité')">Priorité</button>
+            <button onclick="filterMangas('En cours')">En cours</button>
+            <button onclick="filterMangas('En pause')">En pause</button>
+            <button onclick="filterMangas('Arrêté')">Arrêté</button>
+            <button onclick="filterMangas('Fini')">Fini</button>
+        </div>
+        <div id="container" class="container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

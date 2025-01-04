@@ -1,0 +1,98 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:#716F87;
+}
+
+.mainbody{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:25px;
+}
+
+h1{
+    color:black;
+    font-style:italic;
+}
+
+button{
+    background: linear-gradient(to right, #32343B 0%, #626570 100%);
+    background-size: 200% 100%;
+    background-position: right;
+    border:none;
+    border-radius:10px;
+    margin:10px;
+    padding:10px;
+}
+
+button:hover{
+    background-position:left;
+    color:white;
+    cursor:pointer;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-top:20px;
+}
+
+.container > div {
+    border-radius: 10px;
+    background: linear-gradient(to right, #CEE8AA 0%, #7AAB86 100%);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.8);
+    background-size: 200% 100%;
+    background-position: right;
+    width: 50vh;
+    margin: 10px;
+    padding: 10px;
+    transition: background-position 1s ease-in-out;
+}
+
+.container > div:hover {
+    background-position: left;
+    cursor: pointer;
+}
+
+
+.container > div > h2{
+    text-decoration:underline;
+    padding-bottom:5px;
+}
+
+.container > div > p{
+    font-size:120%;
+    padding-bottom:5px;
+}
+
+@media screen and (max-width: 600px) {
+    .container > div{
+        width:90%;
+    }
+    
+}
+
+.search-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #426C54;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+#search-input:focus {
+    box-shadow: 0 0 15px #375a46;
+}
