@@ -3,7 +3,7 @@ const container = document.getElementById("container");
 const mangas = [
     {
         title: "Blue Period",
-        numbers: 14,
+        numbers: 15,
         priority: "Priorité",
     },
     {
@@ -38,7 +38,7 @@ const mangas = [
     },
     {
         title: "Darwin's Game",
-        numbers: 29,
+        numbers: 30,
         priority: "Priorité",
     },
     {
@@ -128,7 +128,7 @@ const mangas = [
     },
     {
         title: "Blue Lock",
-        numbers: 21,
+        numbers: 24,
         priority: "Priorité",
     },
     {
