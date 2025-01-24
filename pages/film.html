@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmList</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav class="header">
+        <ul class="nav-links">
+            <li><a href="../index.html" class="nav-item">animeList</a></li>
+            <li><a href="anime.html" class="nav-item">AnimeList</a></li>
+            <li><a href="film.html" class="nav-item">FilmList</a></li>
+        </ul>
+    </nav>
+    
+    <div class="mainbody">
+        <h1>FilmList</h1>
+        <div class="search-bar">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Rechercher un film..."
+                oninput="searchFilms(this.value)"
+            />
+        </div>
+        <div id="container" class="containerfilm"></div>
+    </div>
+    <script src="../script/film.js"></script>
+</body>
+</html>

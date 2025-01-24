@@ -7,6 +7,29 @@ body{
     background-color:#716F87;
 }
 
+.header {
+    background-color: #1E1E26;
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    color: #7D4EBF;
+}
+
 .mainbody{
     display:flex;
     flex-direction:column;
@@ -72,8 +95,88 @@ button:hover{
     padding-bottom:5px;
 }
 
+.containeranime{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-top:20px;
+}
+
+.containeranime > div {
+    border-radius: 10px;
+    background: linear-gradient(to right, #FECC69 0%, #C69535 100%);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.8);
+    background-size: 200% 100%;
+    background-position: right;
+    width: 50vh;
+    margin: 10px;
+    padding: 10px;
+    transition: background-position 1s ease-in-out;
+}
+
+.containeranime > div:hover {
+    background-position: left;
+    cursor: pointer;
+}
+
+
+.containeranime > div > h2{
+    text-decoration:underline;
+    padding-bottom:5px;
+}
+
+.containeranime > div > p{
+    font-size:120%;
+    padding-bottom:5px;
+}
+
+.containerfilm{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-top:20px;
+}
+
+.containerfilm > div {
+    border-radius: 10px;
+    background: linear-gradient(to right, #CA637E 0%, #a14160 100%);
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.8);
+    background-size: 200% 100%;
+    background-position: right;
+    width: 50vh;
+    margin: 10px;
+    padding: 10px;
+    transition: background-position 1s ease-in-out;
+}
+
+.containerfilm > div:hover {
+    background-position: left;
+    cursor: pointer;
+}
+
+
+.containerfilm > div > h2{
+    text-decoration:underline;
+    padding-bottom:5px;
+}
+
+.containerfilm > div > p{
+    font-size:120%;
+    padding-bottom:5px;
+}
+
 @media screen and (max-width: 600px) {
     .container > div{
+        width:90%;
+    }
+
+    .containeranime > div{
+        width:90%;
+    }
+
+    .containerfilm > div{
         width:90%;
     }
     
