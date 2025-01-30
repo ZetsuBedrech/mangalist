@@ -1,12 +1,14 @@
 const container = document.getElementById("container");
 
-const animes = [
-    {
-        title: "Blue Period",
-        numbers: 15,
-        note: "15",
-    },
-]
+let animes = [];
+
+fetch("../json/anime.json")
+    .then(response => response.json())
+    .then(data => {
+        animes = data; // Stocker les mangas récupérés
+        filterAnimes("Tous"); // Afficher tous les mangas au chargement
+    })
+    .catch(error => console.error("Erreur de chargement du fichier JSON :", error));
 
 function searchAnimes(query) {
     const lowerCaseQuery = query.toLowerCase(); // Convertir la recherche en minuscules
@@ -46,7 +48,8 @@ function filterAnimes(note) {
         animeElement.innerHTML = `
             <h2>${anime.title}</h2>
             <p>Nombre d'épisodes : ${anime.numbers}</p>
-            <p>${anime.note} / 20</p>
+            <p>Tags : ${anime.tags.join(", ")}</p>
+            <p>${anime.note} / 10</p>
         `;
         container.appendChild(animeElement);
     });

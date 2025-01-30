@@ -1,11 +1,15 @@
 const container = document.getElementById("container");
 
-const films = [
-    {
-        title: "Interstellar",
-        note: "20",
-    },
-];
+let films = [];
+
+fetch("../json/film.json")
+    .then(response => response.json())
+    .then(data => {
+        films = data; // Stocker les films récupérés
+        filterFilms("Tous"); // Afficher tous les films seulement après le chargement
+    })
+    .catch(error => console.error("Erreur de chargement du fichier JSON :", error));
+
 
 function searchFilms(query) {
     const lowerCaseQuery = query.toLowerCase(); // Convertir la recherche en minuscules
@@ -43,7 +47,7 @@ function filterFilms(note) {
         filmElement.classList.add("film");
         filmElement.innerHTML = `
             <h2>${film.title}</h2>
-            <p>${film.note} / 20</p>
+            <p>${film.note} / 10</p>
         `;
         container.appendChild(filmElement);
     });

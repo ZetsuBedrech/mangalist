@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeList</title>
+    <title>SerieList</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -17,17 +17,17 @@
     </nav>
     
     <div class="mainbody">
-        <h1>AnimeList</h1>
+        <h1>SerieList</h1>
         <div class="search-bar">
             <input
                 type="text"
                 id="search-input"
-                placeholder="Rechercher un anime..."
-                oninput="searchAnimes(this.value)"
+                placeholder="Rechercher une série..."
+                oninput="searchSeries(this.value)"
             />
         </div>
-        <div id="container" class="containeranime"></div>
+        <div id="container" class="containerserie"></div>
     </div>
-    <script src="../script/anime.js"></script>
+    <script src="../script/serie.js"></script>
 </body>
 </html>
