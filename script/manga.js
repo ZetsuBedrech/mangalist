@@ -2,7 +2,7 @@ const container = document.getElementById("container");
 
 let mangas = [];
 
-fetch("../json/manga.json")
+fetch("json/manga.json")
     .then(response => response.json())
     .then(data => {
         mangas = data; // Stocker les mangas récupérés
