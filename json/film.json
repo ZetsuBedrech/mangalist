@@ -28,10 +28,6 @@
         "note": 9
     },
     {
-        "title": "Squid Game",
-        "note": 7
-    },
-    {
         "title": "Arcane",
         "note": 10
     },
@@ -58,5 +54,30 @@
     {
         "title": "Les Murs Vagabonds",
         "note": 9
+    },
+    {
+        "title": "Hunger",
+        "note": 6
+    },
+    {
+        "title": "Adam a Travers le Temps",
+        "note": 7
+    },
+    {
+        "title": "Circle",
+        "note": 6
+    },
+    {
+        "title": "Escape Game",
+        "note": 8
+    },
+    
+    {
+        "title": "Ready Player One",
+        "note": 9
+    },
+    {
+        "title": "Tau",
+        "note": 7
     }
 ]

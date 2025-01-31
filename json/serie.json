@@ -3,5 +3,29 @@
         "title": "8 Shows",
         "numbers": 8,
         "note": "7"
+    },
+    {
+        "title": "Squid Game",
+        "note": 7
+    },
+    {
+        "title": "All of Us Are Dead",
+        "note": 6
+    },
+    {
+        "title": "How to Sell Drugs Online (Fast)",
+        "note": 8
+    },
+    {
+        "title": "Stranger Things",
+        "note": 7
+    },
+    {
+        "title": "Alice in Borderlands",
+        "note": 6
+    },
+    {
+        "title": "Sweet Home",
+        "note": 8
     }
 ]
