@@ -47,9 +47,11 @@ function filterseries(note) {
         serieElement.classList.add("serie");
         serieElement.innerHTML = `
             <h2>${serie.title}</h2>
-            <p>Nombre d'épisodes : ${serie.numbers}</p>
             <p>${serie.note} / 10</p>
         `;
+        serieElement.addEventListener("click", () => {
+            window.location.href = `detailsserie.html?title=${encodeURIComponent(serie.title)}`;
+        });
         container.appendChild(serieElement);
     });
 }

@@ -49,6 +49,9 @@ function filterFilms(note) {
             <h2>${film.title}</h2>
             <p>${film.note} / 10</p>
         `;
+        filmElement.addEventListener("click", () => {
+            window.location.href = `detailsfilm.html?title=${encodeURIComponent(film.title)}`;
+        });
         container.appendChild(filmElement);
     });
 }
