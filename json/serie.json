@@ -41,5 +41,17 @@
         "note": 8,
         "description": "Alors que les humains se transforment en monstres féroces et que le monde s'enfonce dans le chaos, une poignée de survivants luttent pour survivre, et pour sauver leur humanité.",
         "img": "../img/sweethome.jpg"
+    },
+    {
+        "title": "On My Block",
+        "note": 7,
+        "description": "Dans un quartier difficile de Los Angeles, l'amitié de quatre ados futés et drôles est mise à l'épreuve quand ils rentrent au lycée.",
+        "img": "../img/onmyblock.png"
+    },
+    {
+        "title": "Mortel",
+        "note": 6,
+        "description": "Après avoir conclu un marché avec un être surnaturel, deux lycéens doivent unir les super-pouvoirs qu'ils viennent d'acquérir pour retrouver un assassin.",
+        "img": "../img/mortel.jpg"
     }
 ]
