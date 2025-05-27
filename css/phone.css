@@ -1,0 +1,18 @@
+@media screen and (max-width: 600px) {
+    .container > div{
+        width:90%;
+    }
+
+    .containeranime > div{
+        width:90%;
+    }
+
+    .containerfilm > div{
+        width:90%;
+    }
+
+    .containerserie > div{
+        width:90%;
+    }
+    
+}
