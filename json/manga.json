@@ -1,7 +1,7 @@
 [
     {
         "title": "Blue Period",
-        "numbers": 15,
+        "numbers": 16,
         "priority": "Priorité"
     },
     {
@@ -16,7 +16,7 @@
     },
     {
         "title": "Blue Exorcist",
-        "numbers": 24,
+        "numbers": 27,
         "priority": "En pause"
     },
     {
@@ -62,12 +62,12 @@
     {
         "title": "The Isolator",
         "numbers": 2,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Mushoku Tensei",
         "numbers": 10,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Strangers Case",
@@ -92,7 +92,7 @@
     {
         "title": "Jujutsu Kaisen",
         "numbers": 15,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Re:teen",
@@ -107,7 +107,7 @@
     {
         "title": "Level Up Disaster",
         "numbers": 5,
-        "priority": "Priorité"
+        "priority": "Fini"
     },
     {
         "title": "L'Attaque des Titans",
@@ -122,7 +122,7 @@
     {
         "title": "Solo Leveling",
         "numbers": 14,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Blue Lock",
@@ -142,7 +142,7 @@
     {
         "title": "Real Account",
         "numbers": 9,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "World War Demons",
@@ -157,7 +157,7 @@
     {
         "title": "Anonyme",
         "numbers": 4,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "We Never Learn",
@@ -172,7 +172,7 @@
     {
         "title": "Dead Mount Death Play",
         "numbers": 4,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Radiant",
@@ -180,9 +180,14 @@
         "priority": "En pause"
     },
     {
+        "title": "Outlaw Player",
+        "numbers": 10,
+        "priority": "En cours"
+    },
+    {
         "title": "Online The Comic",
         "numbers": 6,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Kingdom Game",
@@ -202,12 +207,12 @@
     {
         "title": "The Rising of the Shield Hero",
         "numbers": 19,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Goblin Slayer",
         "numbers": 5,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Green WorldZ",
@@ -222,12 +227,12 @@
     {
         "title": "It's my Life",
         "numbers": 1,
-        "priority": "En cours"
+        "priority": "En pause"
     },
     {
         "title": "Ippo",
         "numbers": 1,
-        "priority": "Fini"
+        "priority": "En pause"
     },
     {
         "title": "Final Fantasy Le Guerrier à l'épée de glace",
